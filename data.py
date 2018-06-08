@@ -4,7 +4,7 @@
 
 import os
 import random
-import Image
+from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 import numpy as np

@@ -2,7 +2,7 @@
 # Use of this source code is governed by the AGPLv3 license that can be
 # found in the LICENSE file.
 
-import Image
+from PIL import Image
 import torch
 from torch import nn
 from torch.autograd import Variable

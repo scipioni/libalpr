@@ -17,8 +17,8 @@ use_gpu = torch.cuda.is_available()
 plate_encoder = model.PlateEncoder()
 plate_decoder = model.PlateDecoder()
 
-plate_encoder.load_state_dict(torch.load("params/encoder.dat"))
-plate_decoder.load_state_dict(torch.load("params/decoder.dat"))
+plate_encoder.load_state_dict(torch.load("params/encoder.dat", map_location='cpu'))
+plate_decoder.load_state_dict(torch.load("params/decoder.dat", map_location='cpu'))
 
 plate_encoder.eval()
 plate_decoder.eval()
